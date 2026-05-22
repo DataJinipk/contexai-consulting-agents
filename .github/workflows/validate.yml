@@ -1,0 +1,19 @@
+name: validate-skills
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check each skill has a SKILL.md
+        run: |
+          for s in prospector polymerist counsel steward operator navigator; do
+            test -f "skills/$s/SKILL.md" || { echo "MISSING: skills/$s/SKILL.md"; exit 1; }
+            echo "OK: skills/$s/SKILL.md"
+          done
+      - name: Check benchmark.json is valid JSON
+        run: python3 -c "import json; json.load(open('skill_evals/benchmark.json'))"
+      - name: Check eval viewer HTML exists
+        run: test -f skill_evals/eval_viewer.html && echo "OK: eval viewer"
