@@ -30,6 +30,7 @@ Built and benchmarked by **ContexAi Consultancy**.
 │   ├── benchmark.json       Three-iteration aggregate (final 5.00/5.00 portfolio)
 │   ├── eval_viewer.html     Dark-theme dashboard, openable in any browser
 │   └── results/             Raw results.json per iteration × skill
+├── examples/                Sanitised excerpts from a real 10-deliverable production engagement (evidence of work)
 ├── setup.sh                 One-line install into Claude Desktop / Code skills directory
 ├── LICENSE                  MIT
 └── README.md
@@ -62,6 +63,20 @@ Open `skill_evals/eval_viewer.html` in any browser to inspect score deltas acros
 ## Production usage
 
 These agents have been live-tested as the operating system behind a Board-grade advisory engagement for a listed Karachi refinery, producing publication-quality deliverables across the climate, operational, strategic, contractual and petchem-integration workstreams. The hit rate on agent-recommended actions translating into board-decision input has been high — but agents are decision-support, not decision-makers.
+
+## Examples — Evidence of Work
+
+The `examples/` folder contains sanitised excerpts from a real 10-deliverable production engagement that used all six agents end-to-end. Each file shows what one of the agents actually produces — structure, methodology, language quality — without exposing client identity or proprietary numbers.
+
+- `00-integrated-chairmans-briefing.md` — how the six agents collaborate on a single Board synthesis
+- `01-steward-climate-disclosure.md` — TCFD/IFRS S2 four-pillar disclosure
+- `02-counsel-bscc-charter.md` — committee charter under Pakistan Companies Act 2017 §192
+- `03-navigator-strategic-option-memo.md` — real-options thinking on brownfield-vs-toll
+- `04-operator-oe-roadmap.md` — Solomon EII + reliability + turnaround sequencing
+- `05-polymerist-petchem-thesis.md` — refinery–petchem integration (3 pathways)
+- `06-prospector-crude-supply-brief.md` — crude diversification + indigenous E&P
+
+See `examples/README.md` for context.
 
 ## License
 
