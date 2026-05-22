@@ -15,10 +15,11 @@ If you're evaluating whether these agents are useful for your own work, this is 
 | 04 | `04-operator-oe-roadmap.md` | Operator | Solomon EII / Reliability / Turnaround sequencing |
 | 05 | `05-polymerist-petchem-thesis.md` | Polymerist | Refinery–petchem integration evaluation (3 pathways) |
 | 06 | `06-prospector-crude-supply-brief.md` | Prospector | Crude supply diversification + indigenous E&P sourcing |
+| 07 | `07-portfolio-qa-scorecard.md` | All six | 4-dimension QA rubric applied honestly across all 10 production deliverables (4.93 / 5.00) |
 
 ## How these were produced
 
-For each deliverable, the relevant agent's `SKILL.md` was invoked inside Claude Desktop (or Claude Code) along with the agent's `references/` library. The output below shows the structure and language quality the agent produces consistently — across the three-iteration eval cycle that gave the portfolio its final 5.00/5.00 score.
+For each deliverable, the relevant agent's `SKILL.md` was invoked inside Claude Desktop (or Claude Code) along with the agent's `references/` library. The output below shows the structure and language quality the agent produces consistently — across the three-iteration eval cycle. The synthetic eval portfolio scores 5.00 / 5.00; the production portfolio, scored honestly with the same rubric, lands at 4.93 / 5.00 — see `07-portfolio-qa-scorecard.md` for the breakdown.
 
 ## How NOT to read these
 

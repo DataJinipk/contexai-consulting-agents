@@ -27,10 +27,10 @@ Built and benchmarked by **ContexAi Consultancy**.
 │   ├── operator/     SKILL.md + references/
 │   └── navigator/    SKILL.md + references/
 ├── skill_evals/
-│   ├── benchmark.json       Three-iteration aggregate (final 5.00/5.00 portfolio)
+│   ├── benchmark.json       Three-iteration synthetic-eval aggregate (5.00/5.00)
 │   ├── eval_viewer.html     Dark-theme dashboard, openable in any browser
 │   └── results/             Raw results.json per iteration × skill
-├── examples/                Sanitised excerpts from a real 10-deliverable production engagement (evidence of work)
+├── examples/                Sanitised excerpts from a real 10-deliverable production engagement + 4-dim QA scorecard (real-world score 4.93/5.00)
 ├── setup.sh                 One-line install into Claude Desktop / Code skills directory
 ├── LICENSE                  MIT
 └── README.md
@@ -75,8 +75,11 @@ The `examples/` folder contains sanitised excerpts from a real 10-deliverable pr
 - `04-operator-oe-roadmap.md` — Solomon EII + reliability + turnaround sequencing
 - `05-polymerist-petchem-thesis.md` — refinery–petchem integration (3 pathways)
 - `06-prospector-crude-supply-brief.md` — crude diversification + indigenous E&P
+- `07-portfolio-qa-scorecard.md` — **the same 4-dim rubric applied honestly to the 10 production deliverables (4.93 / 5.00)**
 
 See `examples/README.md` for context.
+
+> **Two scores, deliberately.** The synthetic-eval portfolio (`skill_evals/`) reaches 5.00 / 5.00 because synthetic prompts can be designed to suit the skill. The production portfolio (`examples/07-portfolio-qa-scorecard.md`) lands at 4.93 / 5.00 with five deliverables at 5.00 and five at 4.5–4.875 — all caps documented as deliberate design choices. A scorecard with all 5.0s is the suspicious one.
 
 ## License
 

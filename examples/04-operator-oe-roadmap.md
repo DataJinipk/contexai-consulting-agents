@@ -31,7 +31,7 @@ The total economic uplift at Year-5 run-rate falls comfortably above USD 150 M/y
 
 ## The Seven Structural Drivers
 
-Cnergyico's utilisation gap traces to seven structural drivers, which the Roadmap addresses in priority sequence:
+ABC Refinery's utilisation gap traces to seven structural drivers, which the Roadmap addresses in priority sequence:
 
 1. **Furnace and CDU pre-heat train fouling** (HIGH) — heat-transfer coefficient running ~22% below design; coil skin temperature trending toward maximum allowable wall temperature.
 
