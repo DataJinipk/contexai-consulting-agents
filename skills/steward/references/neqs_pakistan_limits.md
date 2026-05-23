@@ -47,4 +47,4 @@
 ## Enforcement Triggers
 - IEE/EIA required for any project >PKR 50M capex or >5 acres (SEPA-2014 Regulations).
 - Self-Monitoring & Reporting (SMART) program — quarterly submissions to provincial EPA.
-- Non-compliance penalty: PKR 100k/day + closure orders + criminal liability under §17 EPA-1997.
+- Non-compliance penalty: PKR 100k/day + closure orders + criminal liability under S17 EPA-1997.

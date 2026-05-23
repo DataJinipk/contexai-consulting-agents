@@ -45,7 +45,7 @@
 - Integration into overall enterprise risk management (ERM) framework
 - Time horizons: Short (<3 yr), Medium (3-10 yr), Long (>10 yr)
 
-**Risk Categories (IFRS S2 §B6)**:
+**Risk Categories (IFRS S2 SB6)**:
 
 *Physical Risks*
 - Acute: Floods (2022 precedent), heat waves disrupting operations, cyclones in Karachi/Hub corridor
@@ -58,7 +58,7 @@
 - Reputation: ESG-rating downgrades affecting credit, NGO campaigns, community license-to-operate
 
 ### Pillar 4: Metrics & Targets
-**Mandatory IFRS S2 Metrics** (§29-32):
+**Mandatory IFRS S2 Metrics** (S29-32):
 
 *Scope 1, 2, 3 GHG emissions* (GHG Protocol)
 - Scope 1: Direct emissions (combustion, process, fugitive) — typically 70-85% for Pakistan refineries
@@ -74,7 +74,7 @@
 | ARL (Rawalpindi) | 50-55 | 0.5-0.6 M MTCO₂e |
 | PRL (Karachi) | 47-50 | 0.5-0.6 M MTCO₂e |
 
-*Cross-industry Metrics* (IFRS S2 §29):
+*Cross-industry Metrics* (IFRS S2 S29):
 - GHG emissions (Scope 1+2+3)
 - Climate-related risks: % of assets vulnerable; financial impact
 - Climate-related opportunities: % of revenue from "low-carbon" / "green" activities (TCFD methodology)
@@ -82,7 +82,7 @@
 - Internal carbon price (if used; typical Pakistan O&G: USD 25-50/tCO₂ shadow pricing)
 - Remuneration linked to climate (% of executive compensation)
 
-*Industry-Specific Metrics* (IFRS S2 §32 + Industry-based Guidance for Oil & Gas):
+*Industry-Specific Metrics* (IFRS S2 S32 + Industry-based Guidance for Oil & Gas):
 - Methane intensity (tons CH₄ / mscf gas produced; OGMP 2.0 reporting)
 - Flare intensity (mscf flared / bbl produced)
 - Refinery energy intensity (Solomon EII or GJ/bbl)

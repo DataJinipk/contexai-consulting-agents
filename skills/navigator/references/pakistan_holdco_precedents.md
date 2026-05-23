@@ -55,10 +55,10 @@ Pakistan KSE-100 conglomerates have undertaken meaningful portfolio rationalisat
 | Item | Treatment |
 |---|---|
 | Inter-corporate dividend (group company) | **7.5% WHT** if ≥50% ownership AND consolidated for tax (vs 15% retail) |
-| Group taxation (consolidated returns) | Allowed if ≥75% ownership, common shareholders, Companies Act 2017 compliance — election under §59AA ITO |
-| Demerger / Reverse merger | SECP scheme of arrangement under §279-283 Companies Act 2017 + High Court approval; 3-6 months timeline |
-| Capital reduction (cancellation of paid-up capital) | §89 Companies Act 2017 + Court approval; used by Cnergyico FY24-25 for accumulated loss absorption |
-| Super Tax (§4C ITO) | Applies above PKR 150M income threshold; group companies aggregated for limit |
+| Group taxation (consolidated returns) | Allowed if ≥75% ownership, common shareholders, Companies Act 2017 compliance — election under S59AA ITO |
+| Demerger / Reverse merger | SECP scheme of arrangement under S279-283 Companies Act 2017 + High Court approval; 3-6 months timeline |
+| Capital reduction (cancellation of paid-up capital) | S89 Companies Act 2017 + Court approval; used by Cnergyico FY24-25 for accumulated loss absorption |
+| Super Tax (S4C ITO) | Applies above PKR 150M income threshold; group companies aggregated for limit |
 | Stamp duty on inter-group share transfer | Provincial; typically 0.5-1.5% — Sindh 1%, Punjab 1%, KP 1.5% |
 
 ## Holdco Discount Drivers (Pakistan)

@@ -79,7 +79,7 @@ Each deliverable is named here as it appears in the `examples/` folder; numbers 
 
 **03 — Climate Risk Register · 5.00.** Five-sheet workbook with 13 risks and 20 mitigation actions. Likelihood × Impact scoring with tier formulas. ~70 formulas recalc clean, zero errors. Each risk has a named owner and target date. Best-scored deliverable in the portfolio.
 
-**04 — Board Committee Charter · 5.00.** Nine-article charter. Pakistan Companies Act 2017 §192, Listed Companies (Code of Corporate Governance) Regulations 2019 Reg 25, and SECP SRO 1083(I)/2024 all correctly cited. Ready for Board adoption verbatim. Best-of-class for the corporate-secretarial dimension.
+**04 — Board Committee Charter · 5.00.** Nine-article charter. Pakistan Companies Act 2017 S192, Listed Companies (Code of Corporate Governance) Regulations 2019 Reg 25, and SECP SRO 1083(I)/2024 all correctly cited. Ready for Board adoption verbatim. Best-of-class for the corporate-secretarial dimension.
 
 **05 — ISAE 3000 Engagement Letter · 5.00.** Engagement letter follows ISAE 3000 (Revised) structure. Fee band, payment schedule (30 / 30 / 40), scope, and exclusions all properly specified. Big-4 ready to sign as drafted. Strong precedent compliance.
 

@@ -77,7 +77,7 @@ Alternative formulation (Euro V spec-compliance argument):
 2. **Don't accept Deemed Duty applied to Total Production formula** — argues 80-100% to upgrade fraction
 3. **Don't accept FBR ruling subject to "subsequent withdrawal"** — insist on tax holiday vesting and grand-fathered rate
 4. **Get the Companies (Allocation of Tax) Rules tax-allocation formula in writing pre-FID** — FBR-binding
-5. **Watch §4C Super Tax interaction** — historically refineries argued exemption; FBR may litigate
+5. **Watch S4C Super Tax interaction** — historically refineries argued exemption; FBR may litigate
 6. **Carbon credit eligibility** — silent or excluded in most drafts; if refinery generates carbon credits from Euro V switch, ownership matters
 
 ## Recent Precedents

@@ -30,7 +30,7 @@
 | Capital gains by REIT | **Exempt** if held >12 months and ≥90% distributed |
 | Stamp duty on transfer of property to REIT | **Reduced**: 0.5% (vs typical 3-5%) — incentive provision |
 | CVT (Capital Value Tax) | **Exempt** on REIT-asset transfers — provincial-by-province variation |
-| Super Tax (§4C ITO) | Applies only at unitholder level if corporate holder |
+| Super Tax (S4C ITO) | Applies only at unitholder level if corporate holder |
 
 ## Listing Requirements (PSX REIT Counter)
 - Free float ≥25% post-listing

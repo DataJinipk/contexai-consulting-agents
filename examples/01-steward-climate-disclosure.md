@@ -10,7 +10,7 @@
 
 ### 1.1 Board-level oversight
 
-The Board of Directors of ABC Refinery Pk Limited has overall responsibility for the company's climate-related risks and opportunities, exercised through the Board Sustainability Climate Committee ("BSCC") constituted under §192 of the Companies Act 2017 and Regulation 25 of the Listed Companies (Code of Corporate Governance) Regulations 2019. The BSCC is composed of three non-executive directors (including the Chair), the CEO ex-officio, and reports to the Board on a quarterly cadence.
+The Board of Directors of ABC Refinery Pk Limited has overall responsibility for the company's climate-related risks and opportunities, exercised through the Board Sustainability Climate Committee ("BSCC") constituted under S192 of the Companies Act 2017 and Regulation 25 of the Listed Companies (Code of Corporate Governance) Regulations 2019. The BSCC is composed of three non-executive directors (including the Chair), the CEO ex-officio, and reports to the Board on a quarterly cadence.
 
 The BSCC's remit specifically includes:
 - Approval of the company's climate-related risk register, including scenario analysis assumptions and time-horizon definitions;

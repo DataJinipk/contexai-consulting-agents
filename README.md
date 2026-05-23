@@ -1,10 +1,18 @@
 # ContexAi Consulting Agents — Downstream Oil, Gas & Petrochemicals
 
-A bundle of six specialist consulting agents for Anthropic's Claude (and any agent runtime compatible with Anthropic skills). Each agent is encoded as a `SKILL.md` plus a small library of curated reference material distilled from Big-4 / IOC operating practice.
+A bundle of specialist consulting agents for Anthropic's Claude (and any agent runtime compatible with Anthropic skills). Each agent is encoded as a `SKILL.md` plus a small library of curated reference material distilled from Big-4 / IOC operating practice. **v3.2.0** adds a Chief Advisor orchestrator and a Pakistan country-economist, taking the team to **eleven specialists plus one orchestrator** — a full Big-4 partner team in a folder.
 
 Built and benchmarked by **ContexAi Consultancy**.
 
-## The six agents
+## The team
+
+### Orchestrator
+
+| Agent | Role |
+|---|---|
+| **chief-advisor** | Senior Partner / Practice Leader. Names which specialists own each branch of a multi-disciplinary decision, sequences their inputs, integrates their answers into a single Board-grade synthesis. Enforces a five-section synthesis structure and a Specificity Contract on every claim. |
+
+### Specialists
 
 | Agent | Domain | Lead use-cases |
 |---|---|---|
@@ -14,25 +22,32 @@ Built and benchmarked by **ContexAi Consultancy**.
 | **steward** | HSE, ESG, decarbonisation, TCFD/IFRS S2 | Climate disclosure, OGMP 2.0 methane, NEQS compliance, LOPC playbooks |
 | **operator** | Operations excellence, reliability, turnaround planning | Solomon EII, MTBF, RBI per API RP 580/581, alarm management |
 | **navigator** | Strategy, M&A, portfolio, partnership architecture | Brownfield FID, JV structuring, real-options thinking, scenario modelling |
+| **economist** | Pakistan country risk + energy macro — three-lens analysis with Anchor-confidence discipline (safer default) | SBP / IMF / FBR / OGRA / BRP-21 / KIBOR transmission to P&L |
+| **economist-aggressive** | Same as `economist` but without the verification-flagging discipline; higher rubric specificity, requires Board fact-check | Use only when the audience has its own fact-check loop |
+
+The `chief-advisor` SKILL.md also references six **upcoming-to-bundle** specialists that the orchestrator already knows how to direct: `margin-architect` (LP economics, GPW, crack spreads), `trader` (paper-vs-physical, freight, hedging), `alchemist` (refinery–chemicals integration), `sentinel` (asset integrity, RBI, HAZOP/LOPA), `constructor` (EPC/FEED/AACE/FIDIC), and references to the existing eight by name. The full 12-specialist table is in `skills/chief-advisor/SKILL.md`.
 
 ## Repo layout
 
 ```
 .
 ├── skills/
-│   ├── prospector/   SKILL.md + references/
-│   ├── polymerist/   SKILL.md + references/
-│   ├── counsel/      SKILL.md + references/
-│   ├── steward/      SKILL.md + references/
-│   ├── operator/     SKILL.md + references/
-│   └── navigator/    SKILL.md + references/
+│   ├── chief-advisor/             SKILL.md — orchestrator (NEW in v3.2.0)
+│   ├── economist/                 SKILL.md — safer default (NEW in v3.2.0)
+│   ├── economist-aggressive/      SKILL.md — higher-rubric variant (NEW in v3.2.0)
+│   ├── prospector/                SKILL.md + references/
+│   ├── polymerist/                SKILL.md + references/
+│   ├── counsel/                   SKILL.md + references/
+│   ├── steward/                   SKILL.md + references/
+│   ├── operator/                  SKILL.md + references/
+│   └── navigator/                 SKILL.md + references/
 ├── skill_evals/
-│   ├── benchmark.json       Three-iteration synthetic-eval aggregate (5.00/5.00)
-│   ├── eval_viewer.html     Dark-theme dashboard, openable in any browser
-│   └── results/             Raw results.json per iteration × skill
-├── examples/                Sanitised excerpts from a real 10-deliverable production engagement + 4-dim QA scorecard (real-world score 4.93/5.00)
-├── setup.sh                 One-line install into Claude Desktop / Code skills directory
-├── LICENSE                  MIT
+│   ├── benchmark.json             Three-iteration synthetic-eval aggregate (5.00/5.00)
+│   ├── eval_viewer.html           Dark-theme dashboard, openable in any browser
+│   └── results/                   Raw results.json per iteration × skill
+├── examples/                      Sanitised excerpts + Team-of-Agents eval benchmarks
+├── setup.sh                       One-line install into Claude Desktop / Code skills directory
+├── LICENSE                        MIT
 └── README.md
 ```
 
@@ -44,49 +59,20 @@ cd contexai-consulting-agents
 ./setup.sh
 ```
 
-The setup script copies the six skill folders into your local Claude skills directory. After restart, the agents become discoverable to Claude.
+The setup script copies the skill folders into your local Claude skills directory. After restart, the agents become discoverable to Claude.
 
-## Eval methodology
+## Eval methodology (v3.2.0 update)
 
-The agents were tuned over a three-iteration evaluation cycle:
+The skills were tuned over two evaluation programmes:
 
-| Iteration | Portfolio score | Highlights |
-|---|---|---|
-| 1 (baseline) | 4.83 / 5.00 | Pilot evals across all 6 skills |
-| 2 (enriched refs) | 4.97 / 5.00 | Added pilot references for steward, navigator, counsel |
-| 3 (final) | **5.00 / 5.00** | Added TCFD/IFRS S2 Pakistan template; portfolio plateaus |
+**Programme 1 — Six specialists (v1.0–v3.1.0).** Three-iteration cycle, 5.00 / 5.00 synthetic-eval portfolio, 4.93 / 5.00 production-eval portfolio (with five deliverables at 5.00 and five at 4.5–4.875).
 
-Each iteration scores across four dimensions: coverage · specificity · technical_accuracy · actionability — graded by an LLM judge against a fixed rubric.
+**Programme 2 — Team of agents (v3.2.0).** Three-iteration cycle on `chief-advisor` + `economist`, blind grading, on-disk skill files. Three evals × two configs (with_skill vs baseline). The headline result:
 
-Open `skill_evals/eval_viewer.html` in any browser to inspect score deltas across iterations.
+| Iteration | Portfolio with_skill | Specificity Δ vs baseline | Tech accuracy with_skill | What changed |
+|---|---|---|---|---|
+| 1 | 5.00 (inflated) | +0.16 | 5.00 (inflated) | Prompt-scaffolded skills |
+| 2 | 4.79 | **+1.17** | 4.50 | On-disk skills + Specificity Contract + Numbered Anchors |
+| 3 | 4.67 | +0.67 | **4.67** | Added Anchor-confidence discipline — zero invented statutory anchors |
 
-## Production usage
-
-These agents have been live-tested as the operating system behind a Board-grade advisory engagement for a listed Karachi refinery, producing publication-quality deliverables across the climate, operational, strategic, contractual and petchem-integration workstreams. The hit rate on agent-recommended actions translating into board-decision input has been high — but agents are decision-support, not decision-makers.
-
-## Examples — Evidence of Work
-
-The `examples/` folder contains sanitised excerpts from a real 10-deliverable production engagement that used all six agents end-to-end. Each file shows what one of the agents actually produces — structure, methodology, language quality — without exposing client identity or proprietary numbers.
-
-- `00-integrated-chairmans-briefing.md` — how the six agents collaborate on a single Board synthesis
-- `01-steward-climate-disclosure.md` — TCFD/IFRS S2 four-pillar disclosure
-- `02-counsel-bscc-charter.md` — committee charter under Pakistan Companies Act 2017 §192
-- `03-navigator-strategic-option-memo.md` — real-options thinking on brownfield-vs-toll
-- `04-operator-oe-roadmap.md` — Solomon EII + reliability + turnaround sequencing
-- `05-polymerist-petchem-thesis.md` — refinery–petchem integration (3 pathways)
-- `06-prospector-crude-supply-brief.md` — crude diversification + indigenous E&P
-- `07-portfolio-qa-scorecard.md` — **the same 4-dim rubric applied honestly to the 10 production deliverables (4.93 / 5.00)**
-
-See `examples/README.md` for context.
-
-> **Two scores, deliberately.** The synthetic-eval portfolio (`skill_evals/`) reaches 5.00 / 5.00 because synthetic prompts can be designed to suit the skill. The production portfolio (`examples/07-portfolio-qa-scorecard.md`) lands at 4.93 / 5.00 with five deliverables at 5.00 and five at 4.5–4.875 — all caps documented as deliberate design choices. A scorecard with all 5.0s is the suspicious one.
-
-## License
-
-MIT. See `LICENSE`.
-
-## Citation
-
-If you use these agents in published work, please cite as:
-
-> ContexAi Consultancy (2026). *Six specialist consulting agents for downstream oil, gas & petrochemicals*. GitHub: contexai-consulting-agents.
+The **iter-2 → iter-3 trade-off** is the headline finding. The Anchor-confidence discipline trades −0.50 specificity for +0.17 technical_accuracy by flagging uncertain statutory citations as "(subje
